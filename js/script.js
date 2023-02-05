@@ -10,6 +10,10 @@ function validate() {
         reader.onload = e => {
             let contents = processExcel(e.target.result)
             console.log(contents)
+            // location.href = "../index.html";
+            let div = document.getElementById("maindiv");
+            div.innerHTML = "";
+            div.appendChild(createElementWithContent("h2","I just added for fun lets see where it goes"));
         }
         reader.readAsBinaryString(file)
     } else {

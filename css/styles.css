@@ -1,6 +1,20 @@
 h1 {
+  color: #ccc;
+}
+
+h2 {
   font-size: large;
   color: #ccc;
+}
+
+th {
+  font-size: large;
+  color: #ccc;
+}
+
+table, th, td {
+  border: 1px solid #fff;
+  border-collapse: collapse;
 }
 
 body {
