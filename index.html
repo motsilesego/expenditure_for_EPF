@@ -3,13 +3,15 @@
     <head>
         <title>EPF Income and expenses</title>
         <link rel="stylesheet" href="./css/styles.css">
+        <script src="./js/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.14.3/xlsx.full.min.js"></script>
     </head>
     
     <body>
 
         <h1>EPF Income and Expenses</h1>
         <div>
-            <form>
+            <form id="form"  method="POST" enctype=multipart/form-data onsubmit="validate()">
                 <label for="name">First name:</label>
                 <input type="text" id="name" name="name">
                 <label for="surname">Surname:</label>
